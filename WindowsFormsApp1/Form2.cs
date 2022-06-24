@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
         {
             VectorOfVectorOfPoint Contours = new VectorOfVectorOfPoint();
             Mat m = new Mat();
-            CvInvoke.FindContours(recImage, Contours, m, Emgu.CV.CvEnum.RetrType.External, Emgu.CV.CvEnum.ChainApproxMethod.ChainApproxSimple);
+           // CvInvoke.FindContours(recImage, Contours, m, Emgu.CV.CvEnum.RetrType.External, Emgu.CV.CvEnum.ChainApproxMethod.ChainApproxSimple);
         }
     }
 }
