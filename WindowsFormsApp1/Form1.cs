@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            label1.Text = "X = " + e.X + "Y = " + e.Y;
+        }
     }
 }
