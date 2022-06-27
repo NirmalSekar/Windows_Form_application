@@ -9,7 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using System.Windows;
+using System.Media;
 
 namespace WindowsFormsApp1
 {
@@ -35,7 +36,9 @@ namespace WindowsFormsApp1
                 {
                     pictureBox1.Image = Image.FromFile(dialog.FileName);
                 }
-            }
+
+
+                    }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -43,28 +46,47 @@ namespace WindowsFormsApp1
         }
 
 
+
+    
+        
+
+
+
+
         //getting the image1 top coordinates
         private void Form3_MouseClick(object sender, MouseEventArgs e)
         {
+            var HorizontalSize1 = pictureBox1.Width;
+            var verticalSize1 = pictureBox1.Height;
+            
             label1.Text = "X = " + e.X + "\nY = " + e.Y;
-           //Getting Top left coordinates from Real sense
-           //gettting Top Right Coordinates from Real sense 
-           //getting Botttom left coordinates from Real sense
-           //getting Bottom right coordinates from Real sense
+
+            int topLeftX = 95;
+            int topLeftY = 107;
+            int topRightX = 265;
+            int topRightY = 107;
+            int bottomLeftX = 95;
+            int bottomLeftY = 190;
+            int bottomRightX = 265;
+            int bottomRightY = 190;
+
+           
+
+
+            //Getting Top left coordinates from Real sense
+            //gettting Top Right Coordinates from Real sense 
+            //getting Botttom left coordinates from Real sense
+            //getting Bottom right coordinates from Real sense
 
 
             //lets mention this foam coorinates as image1 coordinates
             //merging these coordinates and projecting by resizing the actual size of image 2 that is already stored in the PC
-            
-           // int merge_x = Convert.ToInt32(label1.Text);
-            merging();
-        }
 
-       private void merging()
-        {
-            
-        }
+            // int merge_x = Convert.ToInt32(label1.Text);
 
+        }
+        
+      
 
         // merge this coordinate with image coordinate (0,0)
 
