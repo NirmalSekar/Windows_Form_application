@@ -47,8 +47,16 @@ namespace WindowsFormsApp1
         private void Form3_MouseClick(object sender, MouseEventArgs e)
         {
             label1.Text = "X = " + e.X + "\nY = " + e.Y;
+           //Getting Top left coordinates from Real sense
+           //gettting Top Right Coordinates from Real sense 
+           //getting Botttom left coordinates from Real sense
+           //getting Bottom right coordinates from Real sense
 
-            int merge_x = Convert.ToInt32(label1.Text);
+
+            //lets mention this foam coorinates as image1 coordinates
+            //merging these coordinates and projecting by resizing the actual size of image 2 that is already stored in the PC
+            
+           // int merge_x = Convert.ToInt32(label1.Text);
             merging();
         }
 
