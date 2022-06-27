@@ -48,7 +48,7 @@
             // 
             this.button1.AccessibleName = "btnDetect";
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(556, 72);
+            this.button1.Location = new System.Drawing.Point(556, 85);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(204, 87);
             this.button1.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.button2.AccessibleName = "btnBrowse";
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(556, 268);
+            this.button2.Location = new System.Drawing.Point(556, 277);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 89);
             this.button2.TabIndex = 2;
