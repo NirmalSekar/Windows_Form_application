@@ -56,11 +56,13 @@ namespace WindowsFormsApp1
         //getting the image1 top coordinates
         private void Form3_MouseClick(object sender, MouseEventArgs e)
         {
-            var HorizontalSize1 = pictureBox1.Width;
-            var verticalSize1 = pictureBox1.Height;
+            //var HorizontalSize1 = pictureBox1.Width;
+            //var verticalSize1 = pictureBox1.Height;
             
             label1.Text = "X = " + e.X + "\nY = " + e.Y;
 
+
+            //image1 coordinates
             int topLeftX = 95;
             int topLeftY = 107;
             int topRightX = 265;
@@ -70,7 +72,14 @@ namespace WindowsFormsApp1
             int bottomRightX = 265;
             int bottomRightY = 190;
 
-           
+
+
+            Rectangle myImage = new Rectangle();
+            myImage.Location = new Point(95, 107);
+
+            myImage.Size = new Size(170, 83);
+
+
 
 
             //Getting Top left coordinates from Real sense
