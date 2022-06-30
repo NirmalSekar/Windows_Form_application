@@ -81,7 +81,6 @@ namespace WindowsFormsApp1
 
 
 
-
             //Getting Top left coordinates from Real sense
             //gettting Top Right Coordinates from Real sense 
             //getting Botttom left coordinates from Real sense
@@ -94,12 +93,42 @@ namespace WindowsFormsApp1
             // int merge_x = Convert.ToInt32(label1.Text);
 
         }
-        
-      
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Imagelocation(string ImageFoam)
+        {
+            try
+            {
+                Point point1 = new Point(833, 278);
+                Point point2 = new Point(1876, 523);
+                Point point3 = new Point(1876, 837);
+                Point point4 = new Point(833, 830);
+
+                Point[] curvePoints = { point1, point2, point3, point4 };
+
+                Bitmap imgFoam = new Bitmap(ImageFoam);
+                System.Drawing.Graphics m = System.Drawing.Graphics.FromImage(imgFoam);
+
+                m.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+                TextureBrush brush = new TextureBrush(imgFoam);
+                brush.WrapMode = System.Drawing.Drawing2D.WrapMode.Clamp;
+
+                m.FillPolygon(brush, curvePoints);
+                
+            }
+            catch
+            {
+
+            }
+        }
 
         // merge this coordinate with image coordinate (0,0)
 
-        
+
 
         //resize the image according to the other edge coordinated of the first image
 
